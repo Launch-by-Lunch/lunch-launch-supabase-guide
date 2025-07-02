@@ -90,9 +90,6 @@ const Index = () => {
               alt="Launch by Lunch Logo" 
               className="h-32 md:h-40 mx-auto mb-8 opacity-90 hover:opacity-100 transition-opacity duration-300"
             />
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Launch by Lunch
-            </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
               10 Game-Changing Ways Supabase Supercharges Your Creative Projects
             </p>
