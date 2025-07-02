@@ -88,7 +88,7 @@ const Index = () => {
             <img 
               src={launchByLunchLogo} 
               alt="Launch by Lunch Logo" 
-              className="h-32 md:h-40 mx-auto mb-8 opacity-90 hover:opacity-100 transition-opacity duration-300"
+              className="h-48 md:h-60 mx-auto mb-8 opacity-90 hover:opacity-100 transition-opacity duration-300"
             />
             <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
               10 Game-Changing Ways Supabase Supercharges Your Creative Projects
