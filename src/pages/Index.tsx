@@ -88,7 +88,7 @@ const Index = () => {
             <img 
               src={launchByLunchLogo} 
               alt="Launch by Lunch Logo" 
-              className="h-16 md:h-20 mx-auto mb-8 opacity-90 hover:opacity-100 transition-opacity duration-300"
+              className="h-32 md:h-40 mx-auto mb-8 opacity-90 hover:opacity-100 transition-opacity duration-300"
             />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Launch by Lunch
