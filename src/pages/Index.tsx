@@ -17,52 +17,62 @@ const Index = () => {
     {
       image: profileStorageImg,
       title: "Profile Pictures & File Storage",
-      description: "Easily upload and manage profile pictures, documents, videos, and any files with Supabase Storage. No complex server setup needed."
+      description: "Easily upload and manage profile pictures, documents, videos, and any files with Supabase Storage. No complex server setup needed.",
+      promptingInstructions: "Tell Lovable: 'Create a user profile page with image upload functionality. Include a file upload component that allows users to upload and preview profile pictures, with drag-and-drop support.' Then connect to Supabase for file storage."
     },
     {
       image: authenticationImg,
       title: "User Authentication & Login",
-      description: "Add secure email/password login, social auth (Google, GitHub), and magic links to your app in minutes, not weeks."
+      description: "Add secure email/password login, social auth (Google, GitHub), and magic links to your app in minutes, not weeks.",
+      promptingInstructions: "Tell Lovable: 'Create a login and signup page with email/password forms. Include password validation, loading states, and error handling. Add a protected route that requires authentication.' Then connect to Supabase for auth."
     },
     {
       image: emailAutomationImg,
       title: "Automated Email Notifications",
-      description: "Send welcome emails, password resets, and custom notifications automatically when users perform actions in your app."
+      description: "Send welcome emails, password resets, and custom notifications automatically when users perform actions in your app.",
+      promptingInstructions: "Tell Lovable: 'Create an email notification system with templates for welcome emails and notifications. Include an admin panel to manage email templates and send custom emails.' Then use Supabase Edge Functions for email sending."
     },
     {
       image: contentDatabaseImg,
       title: "Content Database",
-      description: "Store blog posts, user-generated content, product listings, or any data with real-time syncing across all devices."
+      description: "Store blog posts, user-generated content, product listings, or any data with real-time syncing across all devices.",
+      promptingInstructions: "Tell Lovable: 'Create a content management system with forms to create, edit, and delete blog posts. Include rich text editing, image uploads, and a public blog view with search and filtering.' Then connect to Supabase database."
     },
     {
       image: realtimeChatImg,
       title: "Real-time Comments & Chat",
-      description: "Build live commenting systems, chat features, or collaborative tools that update instantly for all users."
+      description: "Build live commenting systems, chat features, or collaborative tools that update instantly for all users.",
+      promptingInstructions: "Tell Lovable: 'Create a real-time chat interface with message bubbles, typing indicators, and online status. Include emoji support and message timestamps.' Then use Supabase real-time subscriptions."
     },
     {
       image: paymentProcessingImg,
       title: "Payment Processing Integration",
-      description: "Connect Stripe, handle subscriptions, and manage payment webhooks securely through Supabase Edge Functions."
+      description: "Connect Stripe, handle subscriptions, and manage payment webhooks securely through Supabase Edge Functions.",
+      promptingInstructions: "Tell Lovable: 'Create a subscription checkout page with pricing plans, payment forms, and subscription management. Include billing history and plan upgrade/downgrade options.' Then integrate Stripe via Supabase Edge Functions."
     },
     {
       image: analyticsTrackingImg,
       title: "Analytics & User Tracking",
-      description: "Track user behavior, page views, conversions, and custom events to understand how people use your creations."
+      description: "Track user behavior, page views, conversions, and custom events to understand how people use your creations.",
+      promptingInstructions: "Tell Lovable: 'Create an analytics dashboard with charts showing user activity, page views, and custom events. Include filters for date ranges and event types.' Then use Supabase to store analytics data."
     },
     {
       image: contentModerationImg,
       title: "Content Moderation",
-      description: "Automatically filter inappropriate content, manage user reports, and maintain community guidelines with AI-powered tools."
+      description: "Automatically filter inappropriate content, manage user reports, and maintain community guidelines with AI-powered tools.",
+      promptingInstructions: "Tell Lovable: 'Create a content moderation system with user reporting, admin review panel, and automated content filtering. Include approval/rejection workflows and user notification system.' Then use Supabase Edge Functions for AI moderation."
     },
     {
       image: backupSyncImg,
       title: "Backup & Sync Across Devices",
-      description: "Keep user data synchronized between mobile, web, and desktop apps with automatic cloud backup and restore."
+      description: "Keep user data synchronized between mobile, web, and desktop apps with automatic cloud backup and restore.",
+      promptingInstructions: "Tell Lovable: 'Create a settings page with data export/import functionality, backup scheduling options, and sync status indicators. Include offline data handling and conflict resolution.' Then use Supabase for cloud sync."
     },
     {
       image: apiEndpointsImg,
       title: "API Endpoints for Mobile Apps",
-      description: "Create custom API endpoints that work seamlessly with iOS, Android, and web apps using Supabase Edge Functions."
+      description: "Create custom API endpoints that work seamlessly with iOS, Android, and web apps using Supabase Edge Functions.",
+      promptingInstructions: "Tell Lovable: 'Create an API documentation page showing available endpoints, request/response examples, and authentication requirements. Include an API testing interface.' Then create Edge Functions in Supabase for custom endpoints."
     }
   ];
 
@@ -103,6 +113,7 @@ const Index = () => {
                 image={feature.image}
                 title={feature.title}
                 description={feature.description}
+                promptingInstructions={feature.promptingInstructions}
                 index={index}
               />
             </div>
