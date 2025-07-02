@@ -1,7 +1,7 @@
 import { FeatureCard } from "@/components/FeatureCard";
 
 // Import logo
-import launchByLunchLogo from "@/assets/launch-by-lunch-logo.png";
+const launchByLunchLogo = "/lovable-uploads/3fe56f90-d40f-49e4-a606-edaa45952997.png";
 
 // Import all generated images
 import profileStorageImg from "@/assets/profile-storage.jpg";
