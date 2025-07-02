@@ -1,62 +1,66 @@
 import { FeatureCard } from "@/components/FeatureCard";
-import { 
-  Image, 
-  Mail, 
-  MailPlus,
-  MailOpen,
-  MailX,
-  MailMinus 
-} from "lucide-react";
+
+// Import all generated images
+import profileStorageImg from "@/assets/profile-storage.jpg";
+import authenticationImg from "@/assets/authentication.jpg";
+import emailAutomationImg from "@/assets/email-automation.jpg";
+import contentDatabaseImg from "@/assets/content-database.jpg";
+import realtimeChatImg from "@/assets/realtime-chat.jpg";
+import paymentProcessingImg from "@/assets/payment-processing.jpg";
+import analyticsTrackingImg from "@/assets/analytics-tracking.jpg";
+import contentModerationImg from "@/assets/content-moderation.jpg";
+import backupSyncImg from "@/assets/backup-sync.jpg";
+import apiEndpointsImg from "@/assets/api-endpoints.jpg";
 
 const Index = () => {
   const features = [
     {
-      icon: Image,
+      image: profileStorageImg,
       title: "Profile Pictures & File Storage",
       description: "Easily upload and manage profile pictures, documents, videos, and any files with Supabase Storage. No complex server setup needed."
     },
     {
-      icon: Mail,
+      image: authenticationImg,
       title: "User Authentication & Login",
       description: "Add secure email/password login, social auth (Google, GitHub), and magic links to your app in minutes, not weeks."
     },
     {
-      icon: MailPlus,
+      image: emailAutomationImg,
       title: "Automated Email Notifications",
       description: "Send welcome emails, password resets, and custom notifications automatically when users perform actions in your app."
     },
     {
-      icon: Image,
+      image: contentDatabaseImg,
       title: "Content Database",
       description: "Store blog posts, user-generated content, product listings, or any data with real-time syncing across all devices."
     },
     {
-      icon: MailOpen,
+      image: realtimeChatImg,
       title: "Real-time Comments & Chat",
       description: "Build live commenting systems, chat features, or collaborative tools that update instantly for all users."
     },
     {
-      icon: Mail,
+      image: paymentProcessingImg,
       title: "Payment Processing Integration",
       description: "Connect Stripe, handle subscriptions, and manage payment webhooks securely through Supabase Edge Functions."
     },
     {
-      icon: MailMinus,
+      image: analyticsTrackingImg,
       title: "Analytics & User Tracking",
       description: "Track user behavior, page views, conversions, and custom events to understand how people use your creations."
     },
     {
-      icon: MailX,
+      image: contentModerationImg,
       title: "Content Moderation",
       description: "Automatically filter inappropriate content, manage user reports, and maintain community guidelines with AI-powered tools."
     },
     {
-      icon: Image,
+      image: backupSyncImg,
       title: "Backup & Sync Across Devices",
       description: "Keep user data synchronized between mobile, web, and desktop apps with automatic cloud backup and restore."
     },
     {
-      icon: MailPlus,
+      image: apiEndpointsImg,
       title: "API Endpoints for Mobile Apps",
       description: "Create custom API endpoints that work seamlessly with iOS, Android, and web apps using Supabase Edge Functions."
     }
@@ -96,7 +100,7 @@ const Index = () => {
           {features.map((feature, index) => (
             <div key={index} className="animate-fade-up">
               <FeatureCard
-                icon={feature.icon}
+                image={feature.image}
                 title={feature.title}
                 description={feature.description}
                 index={index}
