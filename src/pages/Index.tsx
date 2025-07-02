@@ -1,5 +1,8 @@
 import { FeatureCard } from "@/components/FeatureCard";
 
+// Import logo
+import launchByLunchLogo from "@/assets/launch-by-lunch-logo.png";
+
 // Import all generated images
 import profileStorageImg from "@/assets/profile-storage.jpg";
 import authenticationImg from "@/assets/authentication.jpg";
@@ -82,6 +85,11 @@ const Index = () => {
       <div className="bg-hero-gradient text-primary-foreground">
         <div className="container mx-auto px-6 py-20 text-center">
           <div className="animate-fade-up">
+            <img 
+              src={launchByLunchLogo} 
+              alt="Launch by Lunch Logo" 
+              className="h-16 md:h-20 mx-auto mb-8 opacity-90 hover:opacity-100 transition-opacity duration-300"
+            />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Launch by Lunch
             </h1>
